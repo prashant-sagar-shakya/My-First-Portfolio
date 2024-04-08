@@ -45,7 +45,7 @@ If you find this project helpful or interesting, don't forget to star the reposi
 ## Contact
 
 For any inquiries or collaboration opportunities, you can reach me via:
-- Email: [your-email@example.com](mailto:prashant.sagar.shakya@gmail.com)
-- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/prashant-sagar-shakya)
+- Email: [Get In touch](mailto:prashant.sagar.shakya@gmail.com)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/prashant-sagar-shakya)
 
 Happy coding! 🎉
