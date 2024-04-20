@@ -1,6 +1,6 @@
 import React from "react";
 import { BiSolidSchool } from "react-icons/bi";
-import { FaReact, FaSchool } from "react-icons/fa";
+import { FaSchool } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import Netflix from "@/public/Netflix.png";
 import Compiler from "@/public/Code-Alpha.png";
@@ -86,7 +86,7 @@ export const projectsData = [
     {
         title: "Uniport",
         description:
-            "This project is made in contribution with my friends in a hackathon. It's an AI integrated SaaS platform for Music, Video, Image & Code Generation through AI. It also provides Conversation with AI & Gemini support.",
+            "This project is made in contribution with me & my friends in a hackathon. It's an AI integrated SaaS platform for Music, Video, Image & Code Generation through AI. It also provides Conversation with AI & Gemini support.",
         tags: ["React", "Next.js", "Prisma", "Tailwind CSS"],
         imageUrl: uniport,
     },
@@ -95,12 +95,10 @@ export const projectsData = [
         description:
             "An AI integrated SaaS Platform for image manupulation and transformation such as - Generative Fill, Object Recolour, Object Removal, Background Removal & Image Restore.",
         tags: [
-            "React",
             "Next.js",
             "MongoDB",
             "Tailwind CSS",
-            "Stripe",
-            "Clerk",
+            "Stripe"
         ],
         imageUrl: imaginify,
     },
