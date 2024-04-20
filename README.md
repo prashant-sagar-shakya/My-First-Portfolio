@@ -1,6 +1,6 @@
 # My First Portfolio Website
 
-Welcome to my first portfolio website built using React, Framer Motion, Tailwind CSS & Sanity.io! 🚀
+Welcome to my first portfolio website built using React, Next.Js, Framer Motion, TypeSript & Tailwind CSS! 🚀
 
 ## Overview
 
