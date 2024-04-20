@@ -1,10 +1,11 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { BiSolidSchool } from "react-icons/bi";
+import { FaReact, FaSchool } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import Netflix from "@/public/Netflix.png";
+import Compiler from "@/public/Code-Alpha.png";
+import uniport from "@/public/Uniport.png";
+import imaginify from "@/public/Imaginify.png";
 
 export const links = [
     {
@@ -35,73 +36,101 @@ export const links = [
 
 export const experiencesData = [
     {
-        title: "Graduated bootcamp",
-        location: "Miami, FL",
+        title: "Secondary School",
+        location: "Bihar, India",
         description:
-            "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+            "I completed my Secondary Schooling from Ishwarchandra Vidyasagar Academy & scored 74.6% marks.",
+        icon: React.createElement(BiSolidSchool),
+        date: "2016 - 2018",
+    },
+    {
+        title: "High School",
+        location: "Bihar, India",
+        description:
+            "I completed my High Schooling in science stream (PCM) from DAV School & scored 79.4% marks.",
+        icon: React.createElement(FaSchool),
+        date: "2018 - 2020",
+    },
+    {
+        title: "Bachelor of Technology",
+        location: "Mohali, Punjab",
+        description:
+            "I'm pursuing my Bachelor's degree from I.K Gujral Punjab Technical University Mohali Campus 1. Here I Learned Lot of things like - various programming languages (C, C++, jAVA, Python), React, AI/ML and currently working on Next.js",
         icon: React.createElement(LuGraduationCap),
-        date: "2019",
-    },
-    {
-        title: "Front-End Developer",
-        location: "Orlando, FL",
-        description:
-            "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-        icon: React.createElement(CgWorkAlt),
-        date: "2019 - 2021",
-    },
-    {
-        title: "Full-Stack Developer",
-        location: "Houston, TX",
-        description:
-            "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-        icon: React.createElement(FaReact),
         date: "2021 - present",
     },
 ] as const;
 
 export const projectsData = [
     {
-        title: "CorpComment",
+        title: "Netflix UI Clone",
         description:
-            "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-        tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-        imageUrl: corpcommentImg,
+            "I worked on this project when i was learning Tailwind CSS.",
+        tags: ["HTML", "Tailwind CSS", "JavaScript"],
+        imageUrl: Netflix,
     },
     {
-        title: "rmtDev",
+        title: "Code-Alpha",
         description:
-            "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-        tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-        imageUrl: rmtdevImg,
+            "Code-Alpha is an Online Code Editor which can compile various languages like - C, C++, JAVA & Python, It also can handle multiple testcases at once.",
+        tags: [
+            "HTML",
+            "BootStrap",
+            "JavaScript",
+            "CodeMirror",
+            "Express",
+            "Compilex",
+        ],
+        imageUrl: Compiler,
     },
     {
-        title: "Word Analytics",
+        title: "Uniport",
         description:
-            "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-        tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-        imageUrl: wordanalyticsImg,
+            "This project is made in contribution with my friends in a hackathon. It's an AI integrated SaaS platform for Music, Video, Image & Code Generation through AI. It also provides Conversation with AI & Gemini support.",
+        tags: ["React", "Next.js", "Prisma", "Tailwind CSS"],
+        imageUrl: uniport,
+    },
+    {
+        title: "Imaginify",
+        description:
+            "An AI integrated SaaS Platform for image manupulation and transformation such as - Generative Fill, Object Recolour, Object Removal, Background Removal & Image Restore.",
+        tags: [
+            "React",
+            "Next.js",
+            "MongoDB",
+            "Tailwind CSS",
+            "Stripe",
+            "Clerk",
+        ],
+        imageUrl: imaginify,
     },
 ] as const;
 
 export const skillsData = [
+    "C",
+    "C++",
+    "JAVA",
     "HTML",
     "CSS",
-    "JavaScript",
-    "TypeScript",
-    "React",
-    "Next.js",
-    "Node.js",
-    "Git",
     "Tailwind",
-    "Prisma",
-    "MongoDB",
-    "Redux",
-    "GraphQL",
-    "Apollo",
+    "JavaScript",
+    "React",
+    "Node.js",
     "Express",
-    "PostgreSQL",
+    "MySQL",
+    "MongoDB",
+    "TypeScript",
+    "Next.js",
+    "Git",
+    "Linux",
     "Python",
-    "Django",
-    "Framer Motion",
+    "Pandas",
+    "OpenCV",
+    "Firebase",
+    "AWS",
+    "Azure",
+    "Docker",
+    "Kubernetes",
+    "Jenkins",
+    "Heroku",
 ] as const;
