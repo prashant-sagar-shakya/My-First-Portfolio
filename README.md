@@ -1,10 +1,10 @@
 # My First Portfolio Website
 
-Welcome to my first portfolio website built using React, Framer Motion, Tailwind CSS & Sanity.io! 🚀
+Welcome to my first portfolio website built using React, Next.Js, Framer Motion, TypeSript & Tailwind CSS! 🚀
 
 ## Overview
 
-This repository contains the code for my personal portfolio website, showcasing my projects, skills, and experiences as an aspiring developer/designer. The website is built using Framer Motion, Tailwind CSS & Sanity.io & React, a powerful JavaScript library for building user interfaces.
+This repository contains the code for my personal portfolio website, showcasing my projects, skills, and experiences as an aspiring developer/designer. The website is built using Framer Motion, Tailwind CSS & React & Next.js.
 
 ## Features
 
@@ -24,7 +24,7 @@ To get a local copy up and running follow these simple steps:
    
 2. Navigate into the project directory
    ```sh
-   cd your-portfolio
+   cd First-Portfolio
    
 3. Install dependencies
    ```sh
@@ -32,7 +32,7 @@ To get a local copy up and running follow these simple steps:
    
 4. Start the development server
    ```sh
-   npm run start
+   npm run dev
    
 5. Open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
 
