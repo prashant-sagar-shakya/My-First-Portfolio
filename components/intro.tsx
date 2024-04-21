@@ -31,7 +31,7 @@ export default function Intro() {
                         }}
                     >
                         <Image
-                            src="https://avatars.githubusercontent.com/u/166375759?v=4"
+                            src="https://avatars.githubusercontent.com/u/92712501?v=4"
                             alt="Prashant portrait"
                             width="192"
                             height="192"
