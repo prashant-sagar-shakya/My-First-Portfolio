@@ -55,7 +55,7 @@ export const experiencesData = [
         title: "Bachelor of Technology",
         location: "Mohali, Punjab",
         description:
-            "I'm pursuing my Bachelor's degree from I.K Gujral Punjab Technical University Mohali Campus 1. Here I Learned Lot of things like - various programming languages (C, C++, jAVA, Python), React, AI/ML and currently working on Next.js",
+            "I'm currently pursuing my Bachelor's degree from I.K Gujral Punjab Technical University Mohali Campus 1. Here I Learned Lot of things like - various programming languages (C, C++, jAVA, Python), React, AI/ML and currently working on Next.js",
         icon: React.createElement(LuGraduationCap),
         date: "2021 - present",
     },
@@ -86,7 +86,7 @@ export const projectsData = [
     {
         title: "Uniport",
         description:
-            "This project is made in contribution with me & my friends in a Hackathon. It's an AI integrated SaaS platform for Music, Video, Image & Code Generation through AI. It also provides Conversation with AI & Gemini support.",
+            "This project is made in contribution with me & my friends in a Hackathon. It's an AI integrated SaaS platform for Music, Video, Image & Code Generation. It also provides Conversation with AI & Gemini support.",
         tags: ["React", "Next.js", "Prisma", "Tailwind CSS"],
         imageUrl: uniport,
     },
