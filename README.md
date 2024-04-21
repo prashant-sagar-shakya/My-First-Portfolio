@@ -20,11 +20,11 @@ To get a local copy up and running follow these simple steps:
 
 1. Clone the repository
    ```sh
-   git clone https://github.com/Prashant162003/First_Portfolio.git
+   git clone https://github.com/Prashant162003/My-First-Portfolio.git
    
 2. Navigate into the project directory
    ```sh
-   cd First-Portfolio
+   cd My-First-Portfolio
    
 3. Install dependencies
    ```sh
