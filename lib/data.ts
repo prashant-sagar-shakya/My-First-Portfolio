@@ -6,6 +6,7 @@ import Netflix from "@/public/Netflix.png";
 import Compiler from "@/public/Code-Alpha.png";
 import uniport from "@/public/Uniport.png";
 import imaginify from "@/public/Imaginify.png";
+import techheaven from "@/public/techheaven.png";
 
 export const links = [
     {
@@ -96,6 +97,13 @@ export const projectsData = [
             "An AI integrated SaaS Platform for image manupulation and transformation such as - Generative Fill, Object Recolour, Object Removal, Background Removal & Image Restore.",
         tags: ["Next.js", "MongoDB", "Tailwind CSS", "Stripe"],
         imageUrl: imaginify,
+    },
+    {
+        title: "Tech Heaven",
+        description:
+            "An E-commercial website for selling Tech Products. This page is integrated with Admin Panel and It has also filter search and search by category option.",
+        tags: ["React","Next.js", "PayloadCMS", "scss", "Stripe"],
+        imageUrl: techheaven,
     },
 ] as const;
 
