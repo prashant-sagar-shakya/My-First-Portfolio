@@ -85,7 +85,7 @@ export const projectsData = [
         imageUrl: Compiler,
     },
     {
-        title: "Uniport",
+        title: "Uniport (Genius)",
         description:
             "Uniport(Genius) is an AI integrated SaaS platform for Music, Video, Image & Code Generation. It also provides Conversation with AI & Gemini support. This project is mentored by Code-With-Antonio.",
         tags: ["React", "Next.js", "Prisma", "Clerk", "Stripe"],
