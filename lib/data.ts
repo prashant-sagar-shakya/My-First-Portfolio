@@ -4,9 +4,7 @@ import { FaSchool } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import Netflix from "@/public/Netflix.png";
 import Compiler from "@/public/Code-Alpha.png";
-import uniport from "@/public/Uniport.png";
 import imaginify from "@/public/Imaginify.png";
-import techheaven from "@/public/techheaven.png";
 
 export const links = [
     {
@@ -85,25 +83,11 @@ export const projectsData = [
         imageUrl: Compiler,
     },
     {
-        title: "Uniport (Genius)",
-        description:
-            "Uniport(Genius) is an AI integrated SaaS platform for Music, Video, Image & Code Generation. It also provides Conversation with AI & Gemini support. This project is mentored by Code-With-Antonio.",
-        tags: ["React", "Next.js", "Prisma", "Clerk", "Stripe"],
-        imageUrl: uniport,
-    },
-    {
         title: "Imaginify",
         description:
             "An AI integrated SaaS Platform for image manupulation and transformation such as - Generative Fill, Object Recolour, Object Removal, Background Removal & Image Restore.",
         tags: ["Next.js", "MongoDB", "Tailwind CSS", "Stripe"],
         imageUrl: imaginify,
-    },
-    {
-        title: "Tech Heaven",
-        description:
-            "An E-commercial website for selling Tech Products. This page is integrated with Admin Panel and It has also filter search and search by category option.",
-        tags: ["React", "Next.js", "PayloadCMS", "scss", "Stripe"],
-        imageUrl: techheaven,
     },
 ] as const;
 
@@ -115,8 +99,9 @@ export const skillsData = [
     "Tailwind CSS",
     "JavaScript",
     "React",
-    // "Node.js",
-    // "Express",
+    "Redux Toolkit",
+    "Node.js",
+    "Express",
     "MySQL",
     "MongoDB",
     "TypeScript",
@@ -124,13 +109,7 @@ export const skillsData = [
     "Git & Github",
     "Linux",
     "Python",
-    // "Pandas",
     "OpenCV",
     "Firebase",
     "AWS",
-    // "Azure",
-    // "Docker",
-    // "Kubernetes",
-    // "Jenkins",
-    // "Heroku",
 ] as const;
