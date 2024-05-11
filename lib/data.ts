@@ -87,8 +87,8 @@ export const projectsData = [
     {
         title: "Uniport",
         description:
-            "This project is made in contribution with me & my friends in a Hackathon. It's an AI integrated SaaS platform for Music, Video, Image & Code Generation. It also provides Conversation with AI & Gemini support.",
-        tags: ["React", "Next.js", "Prisma", "Tailwind CSS"],
+            "Uniport(Genius) is an AI integrated SaaS platform for Music, Video, Image & Code Generation. It also provides Conversation with AI & Gemini support. This project is mentored by Code-With-Antonio.",
+        tags: ["React", "Next.js", "Prisma", "Clerk", "Stripe"],
         imageUrl: uniport,
     },
     {
@@ -102,7 +102,7 @@ export const projectsData = [
         title: "Tech Heaven",
         description:
             "An E-commercial website for selling Tech Products. This page is integrated with Admin Panel and It has also filter search and search by category option.",
-        tags: ["React","Next.js", "PayloadCMS", "scss", "Stripe"],
+        tags: ["React", "Next.js", "PayloadCMS", "scss", "Stripe"],
         imageUrl: techheaven,
     },
 ] as const;
