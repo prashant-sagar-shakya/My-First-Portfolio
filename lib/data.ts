@@ -93,7 +93,7 @@ export const projectsData = [
     {
         title: "Brainwave",
         description:
-            "AN UI/UX Design for an AI integrated SaaS Platform. Brainwave is a sleek and customizable UI/UX design crafted with React and Tailwind CSS, specifically tailored for AI chat interactions.",
+            "An UI/UX Design for an AI integrated SaaS Platform. Brainwave is a sleek and customizable UI/UX design crafted with React and Tailwind CSS, specifically tailored for AI chat interactions.",
         tags: ["React.js", "Tailwind CSS", "Vite"],
         imageUrl: brainwave,
     },
