@@ -46,6 +46,6 @@ If you find this project helpful or interesting, don't forget to star the reposi
 
 For any inquiries or collaboration opportunities, you can reach me via:
 - Email: [Get In touch](mailto:prashant.sagar.shakya@gmail.com)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/prashant162003)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/prashant-shakya03)
 
 Happy coding! 🎉
