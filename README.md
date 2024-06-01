@@ -6,6 +6,8 @@ Welcome to my first portfolio website built using React, Next.Js, Framer Motion,
 
 This repository contains the code for my personal portfolio website, showcasing my projects, skills, and experiences as an aspiring developer/designer. The website is built using Framer Motion, Tailwind CSS & React & Next.js.
 
+![Thumbnail](/portfolio.png)
+
 ## Features
 
 - **Responsive Design**: The website is designed to adapt seamlessly to various screen sizes, ensuring optimal viewing experience across devices.
