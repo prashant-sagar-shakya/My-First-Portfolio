@@ -21,21 +21,33 @@ This repository contains the code for my personal portfolio website, showcasing 
 To get a local copy up and running follow these simple steps:
 
 1. Clone the repository
+
    ```sh
    git clone https://github.com/prashant-sagar-shakya/My-First-Portfolio.git
-   
+
+   ```
+
 2. Navigate into the project directory
+
    ```sh
    cd My-First-Portfolio
-   
+
+   ```
+
 3. Install dependencies
+
    ```sh
    npm i
-   
+
+   ```
+
 4. Start the development server
+
    ```sh
    npm run dev
-   
+
+   ```
+
 5. Open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
 
 ## Feedback
@@ -47,7 +59,8 @@ If you find this project helpful or interesting, don't forget to star the reposi
 ## Contact
 
 For any inquiries or collaboration opportunities, you can reach me via:
+
 - Email: [Get In touch](mailto:prashant.sagar.shakya@gmail.com)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/prashant-shakya03)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/prashant-sagar-shakya01/)
 
 Happy coding! 🎉
