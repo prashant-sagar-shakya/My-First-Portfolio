@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
@@ -10,6 +10,7 @@ import toast from "react-hot-toast";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
+  const [isPending, setIsPending] = useState(false);
 
   return (
     <motion.section
@@ -42,14 +43,21 @@ export default function Contact() {
       <form
         className="mt-10 flex flex-col dark:text-black"
         action={async (formData) => {
-          const { data, error } = await sendEmail(formData);
+          setIsPending(true);
+          try {
+            const { data, error } = await sendEmail(formData);
 
-          if (error) {
-            toast.error(error);
-            return;
+            if (error) {
+              toast.error(error);
+              return;
+            }
+
+            toast.success("Email sent successfully!");
+          } catch (e: any) {
+            toast.error("Something went wrong. Please try again.");
+          } finally {
+            setIsPending(false);
           }
-
-          toast.success("Email sent successfully!");
         }}
       >
         <input
@@ -68,7 +76,7 @@ export default function Contact() {
           maxLength={5000}
         />
         <div className="flex justify-center sm:justify-start">
-          <SubmitBtn />
+          <SubmitBtn pending={isPending} />
         </div>
       </form>
     </motion.section>

@@ -11,6 +11,7 @@ const nextConfig = {
     experimental: {
         serverActions: true,
     },
+    optimizeFonts: false, // Prevent ETIMEDOUT errors on restricted networks during builds
     webpack: (config, { dev }) => {
         if (dev) {
             config.watchOptions = {
