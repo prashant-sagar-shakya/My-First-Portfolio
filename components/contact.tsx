@@ -53,7 +53,7 @@ export default function Contact() {
         }}
       >
         <input
-          className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="h-14 px-4 rounded-lg borderBlack bg-white dark:bg-white/10 dark:text-white dark:bg-opacity-80 transition-all outline-none focus:scale-[1.01] focus:ring-4 focus:ring-blue-500/20 focus:border-blue-500 focus:bg-white dark:focus:bg-opacity-20"
           name="senderEmail"
           type="email"
           required
@@ -61,13 +61,15 @@ export default function Contact() {
           placeholder="Your email"
         />
         <textarea
-          className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="h-52 my-3 rounded-lg borderBlack p-4 bg-white dark:bg-white/10 dark:text-white dark:bg-opacity-80 transition-all outline-none focus:scale-[1.01] focus:ring-4 focus:ring-blue-500/20 focus:border-blue-500 focus:bg-white dark:focus:bg-opacity-20"
           name="message"
           placeholder="Your message"
           required
           maxLength={5000}
         />
-        <SubmitBtn />
+        <div className="flex justify-center sm:justify-start">
+          <SubmitBtn />
+        </div>
       </form>
     </motion.section>
   );

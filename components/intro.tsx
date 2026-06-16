@@ -15,6 +15,8 @@ export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
+  const MotionLink = motion(Link);
+
   return (
     <section
       ref={ref}
@@ -27,8 +29,10 @@ export default function Intro() {
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
-              type: "tween",
-              duration: 0.2,
+              type: "spring",
+              stiffness: 180,
+              damping: 15,
+              duration: 0.6,
             }}
           >
             <Image
@@ -43,14 +47,25 @@ export default function Intro() {
           </motion.div>
 
           <motion.span
-            className="absolute bottom-0 right-0 text-4xl"
+            className="absolute bottom-0 right-0 text-4xl select-none"
             initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
+            animate={{ 
+              opacity: 1, 
+              scale: 1,
+              rotate: [0, 15, -10, 15, -10, 0]
+            }}
             transition={{
               type: "spring",
               stiffness: 125,
               delay: 0.1,
               duration: 0.7,
+              rotate: {
+                delay: 0.5,
+                duration: 1.2,
+                ease: "easeInOut",
+                repeat: Infinity,
+                repeatDelay: 3
+              }
             }}
           >
             👋
@@ -62,6 +77,12 @@ export default function Intro() {
         className="mb-10 mt-4 px-4 text-[16px] font-medium !leading-[1.5] sm:text-[32px]"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
+        transition={{
+          type: "spring",
+          stiffness: 100,
+          damping: 15,
+          delay: 0.05
+        }}
       >
         Hello, I&apos;m{" "}
         <span className="font-bold">Prashant Sagar Shakya,</span> a{" "}
@@ -75,49 +96,60 @@ export default function Intro() {
       </motion.h1>
 
       <motion.div
-        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+        className="flex flex-col sm:flex-row items-center justify-center gap-3 px-4 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
-          delay: 0.1,
+          type: "spring",
+          stiffness: 100,
+          damping: 15,
+          delay: 0.15,
         }}
       >
-        <Link
+        <MotionLink
           href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none active:scale-95 transition-colors border border-black/5 hover:bg-gray-950 dark:bg-white/10 dark:hover:bg-white/15 dark:border-white/5"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
           }}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
         >
           Contact me here{" "}
-          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
-        </Link>
+          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition-transform" />
+        </MotionLink>
 
-        <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+        <motion.a
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none active:scale-95 transition-colors cursor-pointer borderBlack dark:bg-white/10 dark:hover:bg-white/15"
           href="/CV.pdf"
           download
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
         >
           Download CV{" "}
-          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
-        </a>
+          <HiDownload className="opacity-60 group-hover:translate-y-1 transition-transform" />
+        </motion.a>
 
-        <a
-          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+        <motion.a
+          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full active:scale-95 transition-colors cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:hover:text-white dark:hover:bg-white/15"
           href="https://www.linkedin.com/in/prashant-sagar-shakya01//"
           target="_blank"
+          whileHover={{ scale: 1.15 }}
+          whileTap={{ scale: 0.95 }}
         >
           <BsLinkedin />
-        </a>
+        </motion.a>
 
-        <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+        <motion.a
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full active:scale-95 transition-colors cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:hover:text-white dark:hover:bg-white/15"
           href="https://github.com/prashant-sagar-shakya"
           target="_blank"
+          whileHover={{ scale: 1.15 }}
+          whileTap={{ scale: 0.95 }}
         >
           <FaGithubSquare />
-        </a>
+        </motion.a>
       </motion.div>
     </section>
   );
